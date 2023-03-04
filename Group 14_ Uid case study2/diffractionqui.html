@@ -1,0 +1,155 @@
+ <html>
+    <head>
+        <title> Diffraction Quiz</title>
+        
+    </head>
+    <body>
+        <h2 style="text-align: center; color: teal;"> Quiz Topic: Diffraction</h2>
+        <dl style="color: teal;">
+            <dt><i>Instructions:-</i> </dt>
+            <dd> <i>1. Questions are multiple choice and only 1 option is correct.</i></dd>
+            <dd> <i>2. 1 mark will be awarded for correct answer</i></dd>
+            <dd> <i> 3. 0 mark will be awarded for wrong answer</i></dd>
+            <hr>
+        </dl>
+        <div>
+        <form name="myform"  onsubmit="return check()"  >
+            <dl>
+                <dl>Q1. What changes are observed in a diffraction pattern if the whole apparatus is immersed in water?<br></dl>
+                <dd><input type="radio" name="q1" id="q1a" value="a">A. The Wavelength of light increases<br></dd>
+                <dd><input type="radio" name="q1" id="q1b" value="b">B. Width of central maximum increases<br></dd>
+                <dd><input type="radio" name="q1" id="q1c" value="c">C. Width of central maximum decreases<br></dd>
+                <dd><input type="radio" name="q1" id="q1d" value="d">D. Frequency of light decreases<br></dd>
+                
+            </dl>
+            <dl>
+                <dl>Q2. How shall a diffraction pattern change when white light is used instead of a monochromatic light?<br></dl>
+                <dd><input type="radio" name="q2" id="q2a" value="a">A. The pattern will no longer be visible<br></dd>
+                <dd><input type="radio" name="q2" id="q2b" value="b">B. The colored pattern will be observed with a white bright fringe at the center <br></dd>
+                <dd><input type="radio" name="q2" id="q2c" value="c">C. The shape of the pattern will change from hyperbolic to circular<br></dd>
+                <dd><input type="radio" name="q2" id="q2d" value="d">D. The bright and dark fringes will change position<br></dd>
+                
+            
+            <dl>
+                <dl>Q3. The following pattern is observed for which experiment?<br></dl>
+                <br><img src="dimg.jpeg" alt="Image 1" >
+                <dd><input type="radio" name="q3" id="q3a" value="a">A. Fabry-Perot Interferometer<br></dd>
+                <dd><input type="radio" name="q3" id="q3b" value="b">B. Double Slit Fraunhofer Diffraction<br></dd>
+                <dd><input type="radio" name="q3" id="q3c" value="c">C. Fresnel Diffraction Single Slit Fraunhofer Diffraction<br></dd>
+                <dd><input type="radio" name="q3" id="q3d" value="d">D. Single Slit Fraunhofer Diffraction<br></dd>
+                
+            </dl>
+            <dl>
+                <dl>Q4. By observing the diffraction pattern, the two images are said to be just resolved when ________<br></dl>
+                <dd><input type="radio" name="q4" id="q4q" value="a">A. The central maxima of one image coincide with central maxima of the other<br></dd>
+                <dd><input type="radio" name="q4" id="q4b" value="b">B. The central maxima of one do not coincide with central maxima of the other<br></dd>
+                <dd><input type="radio" name="q4" id="q4c" value="c">C. The central maxima of one image coincides with the first minimum of the other<br></dd>
+                <dd><input type="radio" name="q4" id="q4d" value="d">D. The central maxima of one image do not coincide with the first minimum of other<br></dd>
+                
+            </dl>
+            <dl>
+                <dl>Q5. If the Fresnel’s distance is a, then what should be the distance of the screen from the slit, d, such that ray optics is no longer valid?<br></dl>
+                <dd><input type="radio" name="q5" id="q5a" value="a">A. d > a<br></dd>
+                <dd><input type="radio" name="q5" id="q5b" value="b">B. d < a<br></dd>
+                <dd><input type="radio" name="q5" id="q5c" value="c">C. d = a<br></dd>
+                <dd><input type="radio" name="q5" id="q5d" value="d">D. No relation between d and a<br></dd>
+                
+            </dl>
+            <dl>
+                <dl>Q6. X-ray crystallography uses which characteristic of light?<br></dl>
+                <dd><input type="text" name="q6"  id="q6"><br></dd>
+            </dl>
+            
+
+
+            
+
+
+            <input type="submit" value="Submit!" ></button>
+        </div>
+        </form>
+
+        
+    </body>
+    <script>
+        function check(){
+
+var question1 = document.forms["myform"]["q1"].value;
+var question2 = document.forms["myform"]["q2"].value;
+var question3 = document.forms["myform"]["q3"].value;
+var question4 = document.forms["myform"]["q4"].value;
+var question5 = document.forms["myform"]["q5"].value;
+var question6 = document.forms["myform"]["q6"].value;
+
+
+var correct = 0;
+var qwed=0;
+var qwe=0;
+
+// Validation
+if (question1 == null || question1 == '') {
+		alert('You missed question 1');
+        return false;
+}       
+
+if (question2 == null || question2 == '') {
+		alert('You missed question 2');
+        return false;
+}  
+
+if (question3 == null || question3 == '') {
+		alert('You missed question 3');
+        return false;
+}  
+
+if (question4 == null || question4 == '') {
+		alert('You missed question 4');
+        return false;
+}  
+
+if (question5 == null || question5 == '') {
+		alert('You missed question 5');
+        return false;
+}  
+
+if (question6 == null || question6 == '') {
+		alert('You missed question 6');
+        return false;
+}  
+
+
+ var answers=["c","b","d","c","b"];
+ 
+
+if (question1 == answers[0]) {
+		correct++;
+} 
+
+if (question2 == answers[1]) {
+		correct++;
+} 
+if (question3 == answers[2]) {
+		correct++;
+} 
+if (question4 == answers[3]) {
+		correct++;
+} 
+if (question5 == answers[4]) {
+		correct++;
+} 
+if (question6 == "Diffraction" || question6 == "diffraction" ) {
+		qwed++;
+} 
+
+qwe=correct+qwed
+
+ alert('You scored ' + qwe+' out of 6.');
+ window.location.href="newtab.html";
+
+ return false;
+}
+
+    
+
+    </script>
+</html>

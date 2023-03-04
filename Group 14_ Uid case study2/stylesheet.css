@@ -1,0 +1,39 @@
+body.topmenu
+{
+    background-color:lightgray;
+    font-family:verdana;
+    color:#4CAF50;
+    font-size: 12px;
+    line-height: 60%;
+}
+body.subtopics
+{
+    background-color:lightgray;
+    font-family:arvo;
+}
+body.V_Apage
+{
+    font-family:alegreya;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+   
+}
+a.a1 {
+    color: black;
+    background-color:lightgrey;
+
+}
+
+#notes{
+    font: 1em sans-serif;
+    color:black;
+}

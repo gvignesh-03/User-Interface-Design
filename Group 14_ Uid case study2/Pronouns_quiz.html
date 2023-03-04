@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Quiz on Pronouns</title>
+    </head>
+    <body>
+        <h2 style="text-align: center; color: teal;""> Quiz Topic: Pronouns</h2>
+        <dl style="color: teal;">
+            <dt><i>Instructions:-</i> </dt>
+            <dd> <i>1. Don't panic and answer the questions as instructed.</i></dd>
+            <dd> <i>2. 1 mark will be awarded for correct answer</i></dd>
+            <dd> <i> 3. 0 mark will be awarded for wrong answer</i></dd>
+            <hr>
+        </dl>
+        <form  name="pron" onsubmit="return check()">
+        <b>  Choose the correct options</b><br>
+        <dl>
+            <dt><b>Q1.</b> A reader likes to choose ________ books himself</dt>
+            <dd><input type="radio" name="q1" value="a"> my</dd>
+            <dd><input type="radio" name="q1" value="b"> his</dd>
+            <dd><input type="radio" name="q1" value="c"> our</dd>
+            <dd><input type="radio" name="q1" value="d"> their</dd>
+        </dl> 
+        <dl>
+            <dt><b>Q2.</b> A motorist should take great care of ________ car.</dt>
+            <dd><input type="radio" name="q2" value="a"> its</dd>
+            <dd><input type="radio" name="q2" value="b"> his</dd>
+            <dd><input type="radio" name="q2" value="c"> our</dd>
+            <dd><input type="radio" name="q2" value="d"> you</dd>
+        </dl>  
+        <dl>
+            <dt><b>Q3.</b> The children have gone for a holiday with ________ parents</dt>
+            <dd><input type="radio" name="q3" value="a"> my</dd>
+            <dd><input type="radio" name="q3" value="b"> mine</dd>
+            <dd><input type="radio" name="q3" value="c"> I</dd>
+            <dd><input type="radio" name="q3" value="d"> their</dd>
+        </dl>  
+        <b>  Fill in the blanks pronouns or possessives</b><br>   
+        <dl>
+            <dt><b>Q4. </b> The small child was crying for <input type="text" placeholder="eg. me"  id="q4">mother.</dt><br>
+            
+            <dt><b>Q5. </b>We watched the cow as <input type="text" placeholder="eg. me" id="q5"> placidly chewed the grass.</dt><br>
+            
+            <dt><b>Q6. </b> We offered to help <input type="text" placeholder="eg. me" id="q6"> in their difficulty.</dt><br>
+           
+        </dl> 
+        <b>Rearrange the following into meaningful sentence :</b>
+        <dl>
+            <dt><b>Q7.</b> his / the manager / into / visitors / the / office / called.</dt>
+            <dd><input type="text" placeholder="type here" id="q7"></dd><br>
+            <dt><b>Q8.</b>Ram / his / her /seaside / in the hope / will improve / health / has taken / wife / to the / that / it</dt>
+            <dd><input type="text" placeholder="type here" id="q8"></dd><br>
+            <dt><b>Q9.</b> examination / he / is very proud / her / his / daughter’s success / in / of</dt>
+            <dd><input type="text" placeholder="type here" id="q9"></dd><br>
+        </dl>
+        <b>In the following sentences use pronouns in place of noun wherever you can.</b>
+        <dl>
+            <dt><b>Q10.</b>John gave John’s pen to James and James lent the pen to John to write John’s copy with the pen.</dt>
+            <dd><input type="text" placeholder="type here" id="q10"> </dd><br>
+            <dt><b>Q1.</b>Rama had taken Rama’s watch out of his pocket and was looking at the watch uneasily, shaking the watch every now and then, and holding the watch to his car.</dt>
+            <dd><input type="text" placeholder="type here" id="q11"> </dd><br>
+            <dt><b>Q12.</b>Sita informed Rama that Rama’cab was late in arriving and therefore Rama might go home with Sita.</dt>
+            <dd><input type="text" placeholder="type here" id="q12"> </dd><br>
+        </dl>
+        <input type="submit" value="Submit!" ></button>
+    </form>
+    </body>
+    <script>
+    function check(){
+
+        var question1 = document.forms["pron"]["q1"].value;
+        var question2 = document.forms["pron"]["q2"].value;
+        var question3 = document.forms["pron"]["q3"].value;
+        var question4 = document.forms["pron"]["q4"].value;
+        var question5 = document.forms["pron"]["q5"].value;
+        var question6 = document.forms["pron"]["q6"].value;
+        var question7 = document.forms["pron"]["q7"].value;
+        var question8 = document.forms["pron"]["q8"].value;
+        var question9 = document.forms["pron"]["q9"].value;
+        var question10 = document.forms["pron"]["q10"].value;
+        var question11 = document.forms["pron"]["q11"].value;
+        var question12 = document.forms["pron"]["q12"].value;
+        var correct=0;
+
+        // Validation
+        if (question1 == null || question1 == '') {
+		alert('You missed question 1');
+        return false;
+}       
+
+if (question2 == null || question2 == '') {
+		alert('You missed question 2');
+        return false;
+}  
+
+if (question3 == null || question3 == '') {
+		alert('You missed question 3');
+        return false;
+}  
+
+if (question4 == null || question4 == '') {
+		alert('You missed question 4');
+        return false;
+}  
+
+if (question5 == null || question5 == '') {
+		alert('You missed question 5');
+        return false;
+}  
+
+if (question6 == null || question6 == '') {
+		alert('You missed question 6');
+        return false;
+}  
+
+if (question7 == null || question7 == '') {
+		alert('You missed question 7');
+        return false;
+}       
+
+if (question8 == null || question8 == '') {
+		alert('You missed question 8');
+        return false;
+}  
+
+if (question9 == null || question9 == '') {
+		alert('You missed question 9');
+        return false;
+}  
+
+if (question10 == null || question10 == '') {
+		alert('You missed question 10');
+        return false;
+} 
+
+if (question11== null || question11 == '') {
+		alert('You missed question 11');
+        return false;
+}  
+
+if (question12 == null || question12 == '') {
+		alert('You missed question 12');
+        return false;
+}  
+
+var answers=["b","b","d","it","them"];
+
+if (question1 == answers[0]) {
+		correct++;
+} 
+
+if (question2 == answers[1]) {
+		correct++;
+} 
+if (question3 == answers[2]) {
+		correct++;
+} 
+if (question4 == "his" || question4 == "her" || question4 == "its") {
+		correct++;
+} 
+if (question5 == answers[3]) {
+		correct++;
+} 
+if (question6 == answers[4] ) {
+		correct++;
+} 
+if (question7 == "The manager called the visitors into his office."){
+    correct++;
+}
+if (question8 == "Ram has taken his wife to the seaside in the hope that it will improve her health."){
+    correct++;
+}
+if (question9 == "He is very proud of his daughter’s Success in her examination."){
+    correct++;
+}
+if (question10 == "John has returned the book which you lent him."){
+    correct++;
+}
+if (question11 == "Rama had taken his watch out of his pocket and was looking at it uneasily, shaking it every now and then, and holding it to his car."){
+    correct++;
+}
+if (question12 == "Sita informed Rama that her cab was late in arriving and therefore she might go home with her."){
+    correct++;
+}
+alert('You scored ' + correct +' out of 12.');
+ window.location.href="newtab.html";
+
+ return false;
+
+    }
+    </script>
+        
